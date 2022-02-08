@@ -139,3 +139,68 @@ print(filtered_restaurants)
 
 
 # While
+# Fibonacci
+n = 10
+last, next = 0, 1
+while last < n:
+    print(last)
+    last, next = next, last + next
+
+
+# Functions
+def soma(x, y):
+    return x + y
+
+
+print(soma(2, 2))
+print(soma(x=2, y=2))  # Naming the parameters
+
+
+def concat(*strings):
+    # Equivalente a um ", ".join(strings), que concatena os elementos de um iterável em uma string utilizando um separador
+    # Nesse caso a string resultante estaria separada por vírgula
+    final_string = ""
+    for string in strings:
+        final_string += string
+        if not string == strings[-1]:
+            final_string += ', '
+    return final_string
+
+
+# Can be called with 2 params
+print(concat("Carlos", "Joao"))  # output: "Carlos, Joao"
+
+# Called with a n numbers of params
+print(concat("Carlos", "Joao", "Maria"))  # output: "Carlos, Joao, Maria"
+
+# dict is a function that already comes with python
+dict(nome="Felipe", sobrenome="Silva", idade=25)  # create a dictionary with the provided keys
+
+dict(nome="Ana", sobrenome="Souza", idade=21, turma=1)  # the numbers of parameters can vary
+
+
+print(len([1, 2, 3, 4]))
+print("Bo-taro", "Cassio", sep=", ")  # output: Bo-taro, Cassio
+
+
+PI = 3.14
+
+
+def square(side):
+    '''Calculate area of square.'''
+    return side * side
+
+
+def rectangle(length, width):
+    '''Calculate area of rectangle.'''
+    return length * width
+
+
+def circle(radius):
+    '''Calculate area of circle.'''
+    return PI * radius * radius
+
+
+print("Área do quadrado:", square(10))
+print("Área do retângulo:", rectangle(2, 2))
+print("Área do círculo:", circle(3))
