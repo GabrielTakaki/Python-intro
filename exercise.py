@@ -44,3 +44,14 @@ def biggest_name(lst):
 
 
 biggest_name(["José", "Lucas", "Nádia", "Fernanda", "Cairo", "Joana"])
+
+
+# 5
+def paint_wall(m):
+    painting_cans = m / 54
+    total_price = 80 * painting_cans
+    print(f"{'%.2f' % painting_cans}L, R$ {'%.2f' % total_price}")
+
+
+paint_wall(100)
+
