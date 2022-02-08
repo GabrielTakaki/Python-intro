@@ -25,3 +25,17 @@ fruits.extend(['pear', 'melon', 'kiwi'])
 print(fruits.index('apple'))
 print(fruits)
 print(fruits.sort())
+
+# Exercise:
+
+trybe_course = ["Introdução", "Front-end", "Back-end"]
+
+# 1. Append 'Ciência da Computação' to the list.
+
+trybe_course.append('Ciência da Computação')
+print(trybe_course)
+
+# 2. Access and change the first list element to 'Fundamentos'
+
+trybe_course[0] = 'Fundamentos'
+print(trybe_course)
