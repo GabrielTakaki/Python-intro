@@ -82,3 +82,27 @@ print(range(5))
 print(range(1, 6))
 print(range(1, 11, 2))  # output: [1, 3, ,5 ,7 , 9]
 print(range(10, 0, -1))  # output: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+
+
+# Conditionals
+position = ""
+salary = 0
+if salary <= 2000:
+    position = "estagiário"
+elif 2000 < salary <= 5800:
+    position = "júnior"
+elif 5800 < salary <= 7500:
+    position = "pleno"
+elif 7500 < salary <= 10500:
+    position = "senior"
+else:
+    position = "líder"
+
+# Dicts
+key = "id"
+from_to = {
+    "id": "identifier",
+    "mail": "email",
+    "lastName": "last_name",
+}
+from_to[key]
