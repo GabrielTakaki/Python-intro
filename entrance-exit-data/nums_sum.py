@@ -11,6 +11,10 @@ from http.client import HTTP_PORT  # Import the constant HTTP_PORT from the clie
 # which python
 
 
-my_number = input("Write your number: ")
-print(my_number)
+my_number = 0
+
+while my_number < 42:
+    # Input comes as str. Change to int to sum.
+    my_number += int(input("Write your number: "))
+print("Your number sum is greater then 42")
 
