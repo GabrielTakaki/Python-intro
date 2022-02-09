@@ -27,3 +27,18 @@ with open("arquivo.txt", "w") as file:
     file.write("Michelle 27\n")
 # como estamos fora do contexto, o arquivo foi fechado
 print(file.closed)
+
+
+# Fixation exercise
+# 1.
+students_file = open('students.txt', mode='w')
+students = ['Marcos 10 \n', 'Felipe 4 \n', 'José 6 \n', 'Ana 10 \n', 'Maria 9 \n', 'Miguel 5 \n']
+students_file.writelines(students)
+students_file.close()
+
+students_file = open('students.txt', mode='r')
+for line in students_file:
+    grade = line.split(' ')[1]
+    if int(grade) < 6:
+        print(line.split(' ')[0])
+students_file.close()
