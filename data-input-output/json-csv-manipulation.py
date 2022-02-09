@@ -86,4 +86,3 @@ with open("report_por_campanha.csv", "w") as file:
         #     row.append(value)
         row = [campaign, *bathing.values()]
         writer.writerow(row)
-        
