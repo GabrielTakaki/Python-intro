@@ -20,3 +20,15 @@ character_file = open('characters.txt', mode='r')
 for line in character_file:
     print(line)
 character_file.close()
+
+
+# Writing
+file = open("arquivo.dat", mode="wb")
+file.write(b'C\xc3\xa1ssio 30')  # The b prefix means that the file is codified in bytes
+file.close()
+
+# Reading
+file = open("arquivo.dat", mode="rb")
+content = file.read()
+print(content)  # output: b'C\xc3\xa1ssio 30'
+file.close()
