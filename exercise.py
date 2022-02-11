@@ -21,12 +21,12 @@ print(average([4, 4, 10]))
 # 3
 
 # One way
-def asterisk(n):
-    for i in range(0, n):
-        print('\r')
-        for j in range(1, n+1):
-            print('*', end='')
-    print('\r')
+# def asterisk(n):
+#     for i in range(0, n):
+#         print('\r')
+#         for j in range(1, n+1):
+#             print('*', end='')
+#     print('\r')
 
 
 # Other way
